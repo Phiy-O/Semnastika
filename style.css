@@ -365,17 +365,14 @@ h1 {
 
 .footer-content {
   display: grid;
-  gap: 1.1rem;
+  gap: 1.5rem;
   grid-template-columns: 1.4fr 1fr 1fr;
   padding: 2.4rem 0 1.6rem;
 }
 
 .footer-brand-block,
 .footer-block {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 1rem;
-  padding: 1.2rem;
+  padding: 0.2rem 0;
 }
 
 .footer-kicker {
@@ -406,6 +403,37 @@ h1 {
   list-style: none;
   display: grid;
   gap: 0.25rem;
+}
+
+.footer-partners {
+  padding: 0.3rem 0 1.7rem;
+}
+
+.footer-partners h3 {
+  font-size: 1.08rem;
+  margin-bottom: 0.8rem;
+}
+
+.footer-partner-logos {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+}
+
+.footer-partner-logos img {
+  height: 62px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.2));
+}
+
+.footer-partner-logos .logo-asiin {
+  background: #ffffff;
+  border: 1px solid rgba(247, 187, 82, 0.6);
+  border-radius: 0.7rem;
+  padding: 0.35rem 0.6rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
 }
 
 .site-footer a {
@@ -482,6 +510,10 @@ h1 {
   .hero {
     min-height: 100dvh;
     padding-top: 9rem;
+  }
+
+  .footer-partner-logos {
+    gap: 1rem;
   }
 
   .speakers::before,
